@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,6 +17,10 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Poppins;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -46,6 +51,7 @@ font-weight:600;
 nav ul{
 display:flex;
 list-style:none;
+flex-wrap:wrap;
 }
 
 nav ul li{
@@ -70,6 +76,7 @@ align-items:center;
 justify-content:space-between;
 padding:80px 8%;
 flex-wrap:wrap;
+gap:40px;
 }
 
 .hero-text{
@@ -114,6 +121,7 @@ color:#38bdf8;
 
 .hero img{
 width:250px;
+max-width:100%;
 border-radius:15px;
 border:4px solid #38bdf8;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
@@ -215,7 +223,102 @@ padding:20px;
 margin-top:40px;
 }
 
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width:1024px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+margin-top:30px;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+}
+
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+justify-content:center;
+}
+
+nav ul li{
+margin:8px 12px;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+.hero img{
+width:200px;
+}
+
+section{
+padding:60px 6%;
+}
+
+.skills{
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+
+.projects{
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+}
+
+
+@media (max-width:480px){
+
+.hero-text h1{
+font-size:26px;
+}
+
+.hero-text p{
+font-size:14px;
+}
+
+.btn{
+padding:10px 20px;
+font-size:14px;
+}
+
+.hero img{
+width:160px;
+}
+
+nav h2{
+font-size:20px;
+}
+
+nav ul li{
+margin:6px 10px;
+}
+
+section{
+padding:50px 5%;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
@@ -267,19 +370,48 @@ business insights.
 
 <!-- ABOUT -->
 
+<!-- ABOUT -->
+
 <section id="about">
 
 <h2>About Me</h2>
 
 <p>
-I am an MCA postgraduate passionate about Data Analytics,
-Data Visualization and Data Engineering.
+I am an MCA postgraduate with a strong interest in Data Analytics,
+Data Visualization, and Data Engineering. I enjoy working with
+data to discover meaningful insights that can support better
+decision-making in organizations.
 </p>
-
+<br>
 <p>
-I enjoy analyzing datasets, building dashboards and creating
-insightful reports that help organizations make better
-data-driven decisions.
+During my academic journey, I developed a solid foundation in
+programming and database technologies such as Python, SQL,
+MySQL, and PostgreSQL. I have experience in data analysis
+libraries like Pandas, NumPy, and Matplotlib, which help in
+cleaning, processing, and visualizing complex datasets.
+</p>
+<br>
+<p>
+I have also worked on building interactive dashboards using
+Power BI and Excel to present data in a clear and meaningful
+way. My projects focus on analyzing real-world datasets and
+creating visual reports that highlight trends, patterns,
+and key performance indicators.
+</p>
+<br>
+<p>
+In addition to data analytics, I have experience in web
+development using HTML, CSS, JavaScript, PHP, and Django.
+This allows me to build complete applications where data
+can be collected, stored, analyzed, and visualized
+efficiently.
+</p>
+<br>
+<p>
+I am always eager to learn new technologies, improve my
+analytical skills, and explore advanced areas such as
+data engineering pipelines, big data tools, and
+cloud-based analytics platforms.
 </p>
 
 </section>
@@ -380,6 +512,7 @@ Testing and deployment performed using XAMPP server.
 
 </section>
 
+<!-- PROJECTS -->
 
 <!-- PROJECTS -->
 
@@ -467,21 +600,6 @@ a clean and simple user interface.
 </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-
-<section>
-
-<h2>Certifications</h2>
-
-<div class="cert">Deloitte – Data Analytics Certificate</div>
-<div class="cert">SQL Micro Course</div>
-<div class="cert">Power BI Micro Course</div>
-<div class="cert">Full satck developer - Udemy</div>
-
-
-
-</section>
-
 <!-- CONTACT -->
 
 <section id="contact">
@@ -491,16 +609,17 @@ a clean and simple user interface.
 <div class="contact">
 
 <p>Email: <a href="mailto:vaib9483@gmail.com">vaib9483@gmail.com</a></p>
-
 <p>Phone: <a href="tel:+917338538070">7338538070</a></p>
 
-<p>GitHub: 
+<p>
+GitHub:
 <a href="https://github.com/vaibhav-cmyk" target="_blank">
 github.com/vaibhav-cmyk
 </a>
 </p>
 
-<p>LinkedIn: 
+<p>
+LinkedIn:
 <a href="https://linkedin.com/in/vaibhav-atiwadkar-bb1373343" target="_blank">
 linkedin.com/in/vaibhav-atiwadkar-bb1373343
 </a>
