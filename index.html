@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaibhav M Atiwadkar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav h2{
+color:#0f172a;
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#0f172a;
+text-decoration:none;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin:15px 0;
+color:#cbd5f5;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+border:2px solid #38bdf8;
+margin-right:10px;
+margin-top:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:transparent;
+color:#38bdf8;
+}
+
+/* HERO IMAGE */
+
+.hero img{
+width:250px;
+border-radius:15px;
+border:4px solid #38bdf8;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 8%;
+}
+
+section h2{
+color:#38bdf8;
+margin-bottom:25px;
+}
+
+/* EDUCATION */
+
+.cert{
+background:#1e293b;
+padding:15px;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill-box{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+/* EXPERIENCE */
+
+.experience{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.exp-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+border-left:4px solid #38bdf8;
+}
+
+.exp-card h3{
+color:#38bdf8;
+}
+
+.exp-card span{
+font-size:14px;
+color:#94a3b8;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+.project h3{
+color:#38bdf8;
+}
+
+/* CONTACT */
+
+.contact p{
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Vaibhav</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Vaibhav M Atiwadkar</span></h1>
+
+<p>
+Analytical MCA postgraduate skilled in Python, SQL and Power BI for
+data analysis and visualization.
+</p>
+
+<p>
+Experienced in building interactive dashboards and managing
+databases like MySQL and PostgreSQL to deliver actionable
+business insights.
+</p>
+
+<a href="Vaibhav Atiwadkar.pdf" class="btn">Download Resume</a>
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+<img src="profile.jpeg">
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am an MCA postgraduate passionate about Data Analytics,
+Data Visualization and Data Engineering.
+</p>
+
+<p>
+I enjoy analyzing datasets, building dashboards and creating
+insightful reports that help organizations make better
+data-driven decisions.
+</p>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="cert">
+
+<h3>Master of Computer Applications (MCA)</h3>
+
+<p>KLE DR MS Seshagiri College of Engineering & Technology, Belgaum</p>
+
+<p><b>CGPA:</b> 8.4</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<h3>Programming</h3>
+<p>Python</p>
+<p>SQL</p>
+<p>Pandas</p>
+<p>NumPy</p>
+<p>Matplotlib</p>
+</div>
+
+<div class="skill-box">
+<h3>Databases</h3>
+<p>MySQL</p>
+<p>PostgreSQL</p>
+<p>Oracle</p>
+<p>pgAdmin</p>
+</div>
+
+<div class="skill-box">
+<h3>Tools</h3>
+<p>Power BI</p>
+<p>Excel</p>
+<p>Git</p>
+<p>Jupyter Notebook</p>
+<p>Visual Studio</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="experience">
+
+<div class="exp-card">
+
+<h3>Intern – Olympiad Examination Council</h3>
+
+<span>Web Development & Data Dashboard Development</span>
+
+<p>
+Developed Master and Admin dashboards to manage exam data efficiently.
+</p>
+
+<p>
+Designed database tables for storing student records,
+exam results and reports.
+</p>
+
+<p>
+Worked on development of an online examination portal
+with backend integration.
+</p>
+
+<p>
+Testing and deployment performed using XAMPP server.
+</p>
+
+<p><b>Technologies:</b> HTML, CSS, JavaScript, Bootstrap, SQL</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>AI Impact on Jobs Dashboard</h3>
+
+<p>
+Built an interactive Power BI dashboard analyzing the
+impact of Artificial Intelligence on jobs across industries.
+</p>
+
+<p>
+Visualized automation risk, AI adoption and reskilling
+requirements using interactive charts and slicers.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>Netflix Movie Analysis</h3>
+
+<p>
+Performed exploratory data analysis on Netflix movie
+dataset using Python.
+</p>
+
+<p>
+Created visualizations to analyze trends in movie
+ratings, genres and popularity.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>Olympiad Examination Portal (OEC)</h3>
+
+<p>
+Developed a full-stack web application to conduct online
+Olympiad examinations with secure authentication and
+role-based access.
+</p>
+
+<p>
+Students can register, take exams and view results,
+while administrators can manage questions, users
+and performance reports.
+</p>
+
+<p><b>Tech Stack:</b> HTML, CSS, JavaScript, PHP, MySQL</p>
+
+</div>
+<div class="project">
+
+<h3>Travello Web Application</h3>
+
+<p>
+Travello is a web application developed using Python and Django
+with PostgreSQL database integration.
+</p>
+
+<p>
+The application includes user authentication features like
+registration, login, and logout with secure database connectivity.
+</p>
+
+<p>
+The system manages user data efficiently while maintaining
+a clean and simple user interface.
+</p>
+
+<p><b>Tech Stack:</b> Python, Django, PostgreSQL, HTML, CSS</p>
+
+</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section>
+
+<h2>Certifications</h2>
+
+<div class="cert">Deloitte – Data Analytics Certificate</div>
+<div class="cert">SQL Micro Course</div>
+<div class="cert">Power BI Micro Course</div>
+<div class="cert">Full satck developer - Udemy</div>
+
+
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>Email: <a href="mailto:vaib9483@gmail.com">vaib9483@gmail.com</a></p>
+
+<p>Phone: <a href="tel:+917338538070">7338538070</a></p>
+
+<p>GitHub: 
+<a href="https://github.com/vaibhav-cmyk" target="_blank">
+github.com/vaibhav-cmyk
+</a>
+</p>
+
+<p>LinkedIn: 
+<a href="https://linkedin.com/in/vaibhav-atiwadkar-bb1373343" target="_blank">
+linkedin.com/in/vaibhav-atiwadkar-bb1373343
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Vaibhav M Atiwadkar | Portfolio</p>
+
+</footer>
+
+</body>
+</html>
